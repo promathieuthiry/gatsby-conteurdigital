@@ -5,14 +5,14 @@ import headerStyles from './header.module.scss'
 import Logo from '../assets/svg/Logo_CD_horiz_long_white.svg'
 
 const Header = () => {
- useEffect(() => {
-  const elem = document.querySelector('.sidenav')
-  M.AutoInit()
-  M.Sidenav.init(elem, {
-   edge: 'left',
-   inDuration: 250,
-  })
- }, [])
+ //  useEffect(() => {
+ //   const elem = document.querySelector('.sidenav')
+ //   M.AutoInit()
+ //   M.Sidenav.init(elem, {
+ //    edge: 'left',
+ //    inDuration: 250,
+ //   })
+ //  }, [])
 
  const data = useStaticQuery(graphql`
   query {
@@ -91,12 +91,10 @@ const Header = () => {
    </nav>
 
    {/* Mobile NavBar */}
-   <ul className="sidenav" id="mobile-demo">
+   {/* <ul className="sidenav" id="mobile-demo">
     <div className={headerStyles.containerMobile}>
      <li>
       <Link
-       //   className={headerStyles.navItem}
-       //   activeClassName={headerStyles.activeNavItem}
        to="/"
       >
        Accueil
@@ -105,8 +103,6 @@ const Header = () => {
      <li>
       <Link
        to="/charte"
-       // className={headerStyles.navItem}
-       // activeClassName={headerStyles.activeNavItem}
       >
        Charte
       </Link>
@@ -114,8 +110,6 @@ const Header = () => {
      <li>
       <Link
        to="/blog"
-       // className={headerStyles.navItem}
-       // activeClassName={headerStyles.activeNavItem}
       >
        Blog
       </Link>
@@ -123,8 +117,6 @@ const Header = () => {
      <li>
       <Link
        to="#about"
-       // className={headerStyles.navItem}
-       // activeClassName={headerStyles.activeNavItem}
       >
        À propos
       </Link>
@@ -133,14 +125,12 @@ const Header = () => {
       <a
        href="https://www.typeform.com/"
        target="blank"
-       //  className={headerStyles.navItem}
-       //  activeClassName={headerStyles.activeNavItem}
       >
        Contact
       </a>
      </li>
     </div>
-   </ul>
+   </ul> */}
   </div>
  )
 }
