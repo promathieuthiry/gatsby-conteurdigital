@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.image-manifeste-background {
+    background-image: url('../assets/img/chartebgopacity.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;    
+    padding-top: 5%;
+}
+
+.title{
+    padding-top: 5%;
+  }
+  
+.content {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+  
+  .subtitle {
+    font-size: 1em;
+    padding-bottom: 2%;
+  
+  }
+  
+  .bouttonensavoirplus{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  

@@ -1,0 +1,51 @@
+.card-blog-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-createDate {
+    font-size: calc(3px + 1vh);
+}
+
+.card-blog-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.wrapper {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 10px;
+    // grid-auto-rows: minmax(100px, auto); 
+    // display: inline-grid;
+}
+.card-item {
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.card-item:hover {
+    transform: scale(1.1); 
+}
+
+.card-cover {
+    filter: grayscale(70%);
+}
+
+.card-cover:hover {
+    filter: brightness(100%);
+}
+
+.contentCard {
+    color: black !important;
+}
