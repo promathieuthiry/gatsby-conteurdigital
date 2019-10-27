@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import 'materialize-css/dist/css/materialize.min.css'
-
 import indexStyles from './index.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'

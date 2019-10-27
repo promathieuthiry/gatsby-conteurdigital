@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import M from 'materialize-css/dist/js/materialize.min'
+import 'materialize-css/dist/css/materialize.min.css'
 import headerStyles from './header.module.scss'
 import Logo from '../assets/svg/Logo_CD_horiz_long_white.svg'
 
 const Header = () => {
- //  useEffect(() => {
- //   const elem = document.querySelector('.sidenav')
- //   M.AutoInit()
- //   M.Sidenav.init(elem, {
- //    edge: 'left',
- //    inDuration: 250,
- //   })
- //  }, [])
+ useEffect(() => {
+  if (typeof window !== 'undefined') {
+   const elem = document.querySelector('.sidenav')
+   M.AutoInit()
+   M.Sidenav.init(elem, {
+    edge: 'left',
+    inDuration: 250,
+   })
+  }
+ }, [])
 
  const data = useStaticQuery(graphql`
   query {
@@ -91,46 +94,27 @@ const Header = () => {
    </nav>
 
    {/* Mobile NavBar */}
-   {/* <ul className="sidenav" id="mobile-demo">
+   <ul className="sidenav" id="mobile-demo">
     <div className={headerStyles.containerMobile}>
      <li>
-      <Link
-       to="/"
-      >
-       Accueil
-      </Link>
+      <Link to="/">Accueil</Link>
      </li>
      <li>
-      <Link
-       to="/charte"
-      >
-       Charte
-      </Link>
+      <Link to="/charte">Charte</Link>
      </li>
      <li>
-      <Link
-       to="/blog"
-      >
-       Blog
-      </Link>
+      <Link to="/blog">Blog</Link>
      </li>
      <li>
-      <Link
-       to="#about"
-      >
-       À propos
-      </Link>
+      <Link to="#about">À propos</Link>
      </li>
      <li>
-      <a
-       href="https://www.typeform.com/"
-       target="blank"
-      >
+      <a href="https://www.typeform.com/" target="blank">
        Contact
       </a>
      </li>
     </div>
-   </ul> */}
+   </ul>
   </div>
  )
 }
