@@ -7,6 +7,7 @@ import Logo from '../assets/svg/Logo_CD_horiz_long_white.svg'
 const Header = () => {
  useEffect(() => {
   const elem = document.querySelector('.sidenav')
+  M.AutoInit()
   M.Sidenav.init(elem, {
    edge: 'left',
    inDuration: 250,
