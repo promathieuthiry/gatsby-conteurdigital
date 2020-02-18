@@ -16,7 +16,7 @@ const indexPage = () => (
   <div className={indexStyles.heroContainer}>
    <div className={indexStyles.heroImage}>
     <div className={indexStyles.heroText}>
-     <h1 className={indexStyles.heroTitle}>Conteur Digitale</h1>
+     <h1 className={indexStyles.heroTitle}>Conteur Digital</h1>
      <p className={indexStyles.heroEnonce}>
       Conteur digital est une agence de création de contenus spécialisée dans le
       storytelling. Elle s’adresse aux entrepreneurs, managers et acteurs du
